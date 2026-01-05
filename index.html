@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Частнопрактикующий юрист в Кемерово: ДТП и страховые споры, раздел имущества супругов, земельные споры, споры по детям, жилищные споры. Консультации, документы, суд." />
+  <meta name="theme-color" content="#0B2A4A" />
+  <title>Юрист в Кемерово — ДТП, раздел имущества, дети, земля, жильё</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Юрист в Кемерово — консультации и суд" />
+  <meta property="og:description" content="ДТП, раздел имущества супругов, земельные и жилищные споры, споры по детям. Честная оценка перспектив и стратегия." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (placeholder) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Частнопрактикующий юрист",
+    "description": "Юридическая помощь в Кемерово: ДТП и страховые споры, раздел имущества супругов, земельные споры, споры по детям, жилищные споры.",
+    "areaServed": "Кемерово, Кемеровская область, Россия",
+    "url": "",
+    "telephone": "+79235013563",
+    "email": "",
+    "priceRange": "₽₽",
+    "sameAs": ["https://t.me/territoryazakona_annakovtun"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#071A2F;
+      --muted:#9FB7CF;
+      --text:#EAF2FB;
+      --accent:#4DB3FF;
+      --accent2:#7C5CFF;
+      --warn:#FFB020;
+      --ok:#2EE59D;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 18px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --radius2:26px;
+      --max:1100px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:var(--font);
+      background: radial-gradient(1000px 700px at 20% 10%, rgba(77,179,255,.25), transparent 60%),
+                  radial-gradient(900px 650px at 80% 20%, rgba(124,92,255,.18), transparent 60%),
+                  linear-gradient(180deg, var(--bg) 0%, #051425 100%);
+      color:var(--text);
+    }
+    a{ color:inherit; text-decoration:none; }
+    .container{ width:100%; max-width:var(--max); margin:0 auto; padding:0 18px; }
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 12px; border:1px solid var(--line); border-radius:999px;
+      background:rgba(255,255,255,.04);
+      color:var(--muted); font-size:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 16px; border-radius:14px; border:1px solid transparent;
+      background:linear-gradient(135deg, var(--accent) 0%, #2D7CFF 60%, var(--accent2) 120%);
+      color:#061425; font-weight:800; cursor:pointer;
+      box-shadow: 0 12px 28px rgba(45,124,255,.22);
+      transition:.18s transform, .18s filter, .18s box-shadow;
+      user-select:none;
+    }
+    .btn:hover{ transform: translateY(-1px); filter:saturate(1.05); box-shadow:0 16px 36px rgba(45,124,255,.26);}
+    .btn:active{ transform: translateY(0px); }
+    .btn.secondary{
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      border-color:var(--line);
+      box-shadow:none;
+    }
+    .btn.ghost{
+      background:transparent;
+      border-color:var(--line);
+      color:var(--text);
+      box-shadow:none;
+    }
+
+    header{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(12px);
+      background: rgba(5, 20, 37, .62);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:900; letter-spacing:.2px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      display:grid; place-items:center;
+      background: linear-gradient(135deg, rgba(77,179,255,.25), rgba(124,92,255,.22));
+      border:1px solid var(--line);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+    .navlinks{
+      display:flex; gap:14px; align-items:center;
+      color:var(--muted); font-weight:700;
+    }
+    .navlinks a{ padding:10px 10px; border-radius:12px; }
+    .navlinks a:hover{ background:rgba(255,255,255,.05); color:var(--text); }
+    .nav-cta{ display:flex; gap:10px; align-items:center; }
+
+    .burger{ display:none; }
+    @media (max-width: 860px){
+      .navlinks{ display:none; }
+      .burger{
+        display:inline-flex; align-items:center; justify-content:center;
+        width:44px; height:44px; border-radius:14px;
+        background:rgba(255,255,255,.05);
+        border:1px solid var(--line);
+        cursor:pointer;
+      }
+      .nav-cta .btn.secondary{ display:none; }
+    }
+    .mobile{
+      display:none;
+      border-top:1px solid var(--line);
+      padding:10px 0 16px;
+    }
+    .mobile a{
+      display:block;
+      padding:12px 12px;
+      border-radius:14px;
+      color:var(--muted);
+      font-weight:750;
+    }
+    .mobile a:hover{ background:rgba(255,255,255,.05); color:var(--text); }
+
+    .hero{ padding:46px 0 18px; }
+    .grid-hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){ .grid-hero{ grid-template-columns:1fr; } }
+
+    .heroCard{
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background: linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.03) 100%);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .heroMain{ padding:28px; }
+    .hero h1{
+      margin:14px 0 10px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height:1.05;
+      letter-spacing:-.4px;
+    }
+    .hero p{
+      margin:0;
+      color:var(--muted);
+      font-size: 16px;
+      line-height:1.55;
+      max-width: 62ch;
+    }
+    .hero-actions{
+      margin-top:18px;
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .badges{
+      margin-top:18px;
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .badge{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      width:fit-content;
+    }
+    .dot{
+      width:10px; height:10px; border-radius:99px;
+      margin-top:4px;
+      background: var(--accent);
+      box-shadow:0 0 0 3px rgba(77,179,255,.18);
+    }
+    .badge strong{ display:block; font-size:14px; }
+    .badge span{ display:block; font-size:13px; color:var(--muted); margin-top:2px; }
+
+    .heroSide{ padding:18px; display:flex; flex-direction:column; gap:12px; }
+    .mini{
+      padding:18px;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .mini h3{ margin:0 0 8px; font-size:16px; }
+    .mini p{ margin:0; color:var(--muted); line-height:1.5; font-size:14px; }
+    .list{ margin:10px 0 0; padding:0; list-style:none; display:grid; gap:10px; }
+    .li{ display:flex; gap:10px; align-items:flex-start; color:var(--muted); font-size:14px; line-height:1.45; }
+    .check{
+      width:18px; height:18px; border-radius:7px;
+      display:grid; place-items:center;
+      background: rgba(46,229,157,.12);
+      border:1px solid rgba(46,229,157,.25);
+      color: var(--ok);
+      flex:0 0 auto;
+      margin-top:1px;
+    }
+
+    section{ padding:28px 0; }
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:14px; flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+    .sectionTitle h2{
+      margin:0;
+      font-size: clamp(22px, 2.4vw, 30px);
+      letter-spacing:-.2px;
+    }
+    .sectionTitle p{
+      margin:0;
+      color:var(--muted);
+      max-width:60ch;
+      line-height:1.5;
+      font-size:14px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:12px;
+    }
+    .card{
+      grid-column: span 4;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: rgba(255,255,255,.04);
+      padding:16px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.02);
+    }
+    .card h3{ margin:0 0 6px; font-size:16px; }
+    .card p{ margin:0; color:var(--muted); line-height:1.5; font-size:14px; }
+    .chiprow{ margin-top:10px; display:flex; gap:8px; flex-wrap:wrap; }
+    .chip{
+      font-size:12px; color:var(--muted);
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    @media (max-width: 980px){ .card{ grid-column: span 6; } }
+    @media (max-width: 640px){ .card{ grid-column: span 12; } }
+
+    .steps{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:12px;
+    }
+    .step{
+      grid-column: span 3;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      padding:16px;
+      position:relative;
+      overflow:hidden;
+    }
+    .step::after{
+      content:"";
+      position:absolute; inset:-40px -40px auto auto;
+      width:140px; height:140px; border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, rgba(77,179,255,.28), transparent 60%);
+      transform: rotate(25deg);
+    }
+    .num{
+      width:34px; height:34px; border-radius:14px;
+      display:grid; place-items:center;
+      background: rgba(77,179,255,.12);
+      border:1px solid rgba(77,179,255,.22);
+      color: var(--accent);
+      font-weight:900;
+      margin-bottom:10px;
+      position:relative; z-index:1;
+    }
+    .step h3{ margin:0 0 6px; font-size:15px; position:relative; z-index:1; }
+    .step p{ margin:0; color:var(--muted); font-size:13px; line-height:1.45; position:relative; z-index:1; }
+    @media (max-width: 980px){ .step{ grid-column: span 6; } }
+    @media (max-width: 640px){ .step{ grid-column: span 12; } }
+
+    .faq{
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background: rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .q{
+      border-top:1px solid var(--line);
+      padding:14px 16px;
+      cursor:pointer;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px;
+    }
+    .q:first-child{ border-top:none; }
+    .q strong{ font-size:15px; }
+    .q span{ color:var(--muted); font-size:12px; }
+    .a{
+      display:none;
+      padding:0 16px 14px;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:14px;
+    }
+    .q[aria-expanded="true"] + .a{ display:block; }
+
+    .contactGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+      align-items:start;
+    }
+    @media (max-width: 980px){ .contactGrid{ grid-template-columns:1fr; } }
+    .panel{
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background: rgba(255,255,255,.04);
+      padding:18px;
+    }
+    .panel h3{ margin:0 0 8px; }
+    .muted{ color:var(--muted); line-height:1.55; }
+    .kv{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap:10px;
+      margin-top:12px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .kv div:nth-child(odd){ color:#CFE3F7; font-weight:750; }
+
+    form{ display:grid; gap:10px; margin-top:12px; }
+    .row{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    @media (max-width: 640px){ .row{ grid-template-columns:1fr; } }
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.18);
+      color:var(--text);
+      outline:none;
+      font-size:14px;
+    }
+    textarea{ min-height:110px; resize:vertical; }
+    input:focus, textarea:focus{ border-color: rgba(77,179,255,.45); box-shadow:0 0 0 4px rgba(77,179,255,.10); }
+    label{ font-size:12px; color:var(--muted); }
+    .consent{
+      display:flex; align-items:flex-start; gap:10px;
+      border:1px solid var(--line);
+      padding:12px;
+      border-radius:16px;
+      background: rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.45;
+    }
+    .consent input{ width:18px; height:18px; margin-top:2px; }
+    .note{ font-size:12px; color:var(--muted); margin-top:10px; }
+
+    footer{
+      padding:26px 0 34px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .foot{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .toast{
+      position: fixed;
+      right: 18px; bottom: 18px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(5, 20, 37, .78);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      color: var(--text);
+      max-width: 380px;
+      display:none;
+      z-index: 50;
+    }
+    .toast strong{ display:block; margin-bottom:2px; }
+    .toast p{ margin:0; color:var(--muted); font-size:13px; line-height:1.4; }
+    .toast .actions{ margin-top:10px; display:flex; gap:10px; flex-wrap:wrap; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="На главную">
+          <div class="logo" aria-hidden="true">⚖️</div>
+          <div>
+            <div style="font-size:14px; line-height:1.1;">Юрист • Кемерово</div>
+            <div style="font-size:12px; color:var(--muted); font-weight:750; margin-top:2px;">
+              ДТП • Имущество • Дети • Земля • Жильё
+            </div>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Навигация">
+          <a href="#services">Услуги</a>
+          <a href="#about">Обо мне</a>
+          <a href="#process">Как работаем</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn secondary" href="tel:+79235013563">Позвонить</a>
+          <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">☰</button>
+        </div>
+      </div>
+
+      <div class="mobile" id="mobile">
+        <a href="#services">Услуги</a>
+        <a href="#about">Обо мне</a>
+        <a href="#process">Как работаем</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+        <div style="padding:10px 12px; display:grid; gap:10px;">
+          <a class="btn" href="tel:+79235013563" style="width:100%;">Позвонить: 8 923 501-35-63</a>
+          <a class="btn ghost" href="https://t.me/territoryazakona_annakovtun" target="_blank" rel="noopener" style="width:100%;">Написать в Telegram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="grid-hero">
+          <div class="heroCard">
+            <div class="heroMain">
+              <div class="pill">📍 Кемерово • 🧠 Честная оценка перспектив • ⚖️ Стратегия</div>
+
+              <h1>Юридическая помощь без иллюзий — с позицией, которую можно защитить</h1>
+              <p>
+                Консультации, документы и представительство в суде:
+                ДТП, раздел имущества супругов, споры по детям, земельные и жилищные споры.
+              </p>
+
+              <div class="hero-actions">
+                <a class="btn" href="tel:+79235013563">Позвонить: 8 923 501-35-63</a>
+                <a class="btn ghost" href="https://t.me/territoryazakona_annakovtun" target="_blank" rel="noopener">Написать в Telegram</a>
+              </div>
+
+              <div class="badges">
+                <div class="badge">
+                  <div class="dot" style="background:var(--accent); box-shadow:0 0 0 3px rgba(77,179,255,.16)"></div>
+                  <div>
+                    <strong>Сильные документы</strong>
+                    <span>претензии • иски • отзывы</span>
+                  </div>
+                </div>
+                <div class="badge">
+                  <div class="dot" style="background:var(--warn); box-shadow:0 0 0 3px rgba(255,176,32,.14)"></div>
+                  <div>
+                    <strong>Трезвая оценка</strong>
+                    <span>где “да”, а где “нет”</span>
+                  </div>
+                </div>
+                <div class="badge">
+                  <div class="dot" style="background:var(--ok); box-shadow:0 0 0 3px rgba(46,229,157,.14)"></div>
+                  <div>
+                    <strong>Процесс под контролем</strong>
+                    <span>сроки • доказательства • тактика</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="heroCard">
+            <div class="heroSide">
+              <div class="mini">
+                <h3>С чем чаще всего приходят</h3>
+                <p>Коротко — чтобы сразу понять “мой ли это случай”.</p>
+                <ul class="list">
+                  <li class="li"><span class="check">✓</span> ДТП: спор о виновности, отказ/занижение выплаты, спор со страховой</li>
+                  <li class="li"><span class="check">✓</span> Раздел имущества супругов: квартира/ипотека/кредиты, доли, компенсации</li>
+                  <li class="li"><span class="check">✓</span> Споры по детям: место жительства, порядок общения, алименты, ограничения</li>
+                  <li class="li"><span class="check">✓</span> Земельные и жилищные: границы, сервитут, пользование, выселение, сособственники</li>
+                </ul>
+              </div>
+
+              <div class="mini">
+                <h3>Быстрый старт</h3>
+                <p class="muted">Нужен план? Начинаем с фактов и документов. Без “воды”, зато по делу.</p>
+                <div class="hero-actions" style="margin-top:12px;">
+                  <a class="btn secondary" href="#contact">Оставить заявку</a>
+                  <a class="btn ghost" href="https://t.me/territoryazakona_annakovtun" target="_blank" rel="noopener">Telegram</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="sectionTitle">
+          <div>
+            <h2>Услуги</h2>
+            <p>Консультация • подготовка документов • ведение дела в суде.</p>
+          </div>
+          <div class="pill">📌 Кемерово и онлайн • 📄 Документы по чек-листу</div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>ДТП и страховые споры</h3>
+            <p>Оспаривание виновности, выплаты/отказы, экспертизы, ущерб, моральный вред, работа с доказательствами и процессом.</p>
+            <div class="chiprow">
+              <span class="chip">ОСАГО</span><span class="chip">выплата</span><span class="chip">экспертиза</span><span class="chip">суд</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Раздел имущества супругов</h3>
+            <p>Квартира, ипотека, кредиты, вклады, авто, бизнес/доли. Тактика: фиксация состава имущества + доказательства вклада.</p>
+            <div class="chiprow">
+              <span class="chip">совместное</span><span class="chip">доли</span><span class="chip">компенсация</span><span class="chip">ипотека</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Споры по детям</h3>
+            <p>Определение места жительства, порядок общения, участие в воспитании, алименты, защита интересов ребёнка.</p>
+            <div class="chiprow">
+              <span class="chip">порядок общения</span><span class="chip">алименты</span><span class="chip">интересы ребёнка</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Земельные споры</h3>
+            <p>Границы/межевание, споры с соседями, сервитут, доступ/проезд, устранение препятствий, документы и экспертиза.</p>
+            <div class="chiprow">
+              <span class="chip">границы</span><span class="chip">сервитут</span><span class="chip">соседи</span><span class="chip">экспертиза</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Жилищные споры</h3>
+            <p>Пользование жилым помещением, сособственники, выселение, вселение, порядок оплаты, коммунальные конфликты.</p>
+            <div class="chiprow">
+              <span class="chip">сособственники</span><span class="chip">выселение</span><span class="chip">пользование</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Документы “под ключ”</h3>
+            <p>Претензии, иски, отзывы, возражения, жалобы, ходатайства. Формулировки — так, чтобы в суде не краснеть.</p>
+            <div class="chiprow">
+              <span class="chip">претензия</span><span class="chip">иск</span><span class="chip">отзыв</span><span class="chip">апелляция</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="sectionTitle">
+          <div>
+            <h2>Обо мне</h2>
+            <p>Логика простая: сначала анализ → потом позиция → затем процесс и контроль сроков.</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card" style="grid-column: span 7;">
+            <h3>Как я веду дела</h3>
+            <p>
+              В суде выигрывают не громче всех, а точнее всех. Поэтому я работаю от фактов и документов:
+              выделяю ключевые обстоятельства, собираю доказательства, просчитываю риски и строю стратегию.
+              <br><br>
+              Если перспектива слабая — скажу сразу. Если перспектива есть — сделаем так, чтобы её не утопить в процессуальных ошибках.
+            </p>
+            <div class="chiprow">
+              <span class="chip">стратегия</span><span class="chip">доказательства</span><span class="chip">сроки</span><span class="chip">процесс</span>
+            </div>
+          </div>
+
+          <div class="card" style="grid-column: span 5;">
+            <h3>Подходит, если тебе нужно</h3>
+            <p>
+              • понять реальную перспективу<br>
+              • подготовить сильный документ<br>
+              • вести дело “под ключ”<br>
+              • спокойно пройти суд без хаоса
+            </p>
+            <div class="mini" style="margin-top:12px;">
+              <h3>Профессиональная правда</h3>
+              <p>“Сделать красиво” можно и в Canva. В суде нужно сделать доказуемо.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container">
+        <div class="sectionTitle">
+          <div>
+            <h2>Как работаем</h2>
+            <p>Понятный маршрут: от первичного анализа до результата и исполнения.</p>
+          </div>
+          <div class="pill">📎 Чек-лист документов • 🧭 План на руках</div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Запрос</h3>
+            <p>Коротко описываете ситуацию и цель. Я уточняю важные детали.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Документы</h3>
+            <p>Собираем необходимое: договоры, переписка, постановления, фото/видео, выписки.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Стратегия</h3>
+            <p>Фиксируем план: что заявляем, что доказываем, сроки, риски, следующий шаг.</p>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <h3>Реализация</h3>
+            <p>Документы/переговоры/суд/исполнение. Процесс держу “в руках”, а не “на авось”.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="sectionTitle">
+          <div>
+            <h2>FAQ</h2>
+            <p>Частые вопросы — коротко.</p>
+          </div>
+        </div>
+
+        <div class="faq" role="list">
+          <div class="q" role="listitem" tabindex="0" aria-expanded="false">
+            <strong>Сколько стоит консультация?</strong><span>Нажми</span>
+          </div>
+          <div class="a">Зависит от категории и объёма материалов. Сообщите суть и что на руках по документам — назову стоимость до начала работы.</div>
+
+          <div class="q" role="listitem" tabindex="0" aria-expanded="false">
+            <strong>Можно ли работать удалённо?</strong><span>Нажми</span>
+          </div>
+          <div class="a">Да. Анализ и документы часто можно сделать онлайн. Суд — по договорённости, когда это целесообразно.</div>
+
+          <div class="q" role="listitem" tabindex="0" aria-expanded="false">
+            <strong>Вы гарантируете победу?</strong><span>Нажми</span>
+          </div>
+          <div class="a">Гарантирую профессиональную работу и выстроенную позицию. Итог зависит от суда и доказательств, поэтому “гарантия победы” — это маркетинг, а не право.</div>
+
+          <div class="q" role="listitem" tabindex="0" aria-expanded="false">
+            <strong>Если сроки “горят”, что делать?</strong><span>Нажми</span>
+          </div>
+          <div class="a">Не откладывать. В спорных категориях сроки решают всё: часть ошибок потом уже не лечится. Звоните или пишите — обозначим первый шаг.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="sectionTitle">
+          <div>
+            <h2>Контакты</h2>
+            <p>Кемерово. Быстрее всего — звонок. Если удобнее — Telegram.</p>
+          </div>
+        </div>
+
+        <div class="contactGrid">
+          <div class="panel">
+            <h3>Связаться</h3>
+            <p class="muted">Телефон и Telegram уже “живые”. Email — если понадобится, вставишь свой.</p>
+
+            <div class="kv">
+              <div>Телефон</div><div><a href="tel:+79235013563">8 923 501-35-63</a></div>
+              <div>Город</div><div>Кемерово</div>
+              <div>Telegram</div><div><a href="https://t.me/territoryazakona_annakovtun" target="_blank" rel="noopener">@territoryazakona_annakovtun</a></div>
+              <div>Email</div><div><a href="mailto:yourmail@example.com">yourmail@example.com</a></div>
+            </div>
+
+            <div class="hero-actions" style="margin-top:14px;">
+              <a class="btn secondary" href="tel:+79235013563">Позвонить</a>
+              <a class="btn ghost" href="https://t.me/territoryazakona_annakovtun" target="_blank" rel="noopener">Написать в Telegram</a>
+            </div>
+
+            <p class="note">Важно: первичный ответ — ориентир. Полноценная позиция делается по документам.</p>
+          </div>
+
+          <div class="panel">
+            <h3>Заявка</h3>
+            <p class="muted">Форма в демо-режиме: формирует текст заявки для отправки в Telegram.</p>
+
+            <form id="leadForm" novalidate>
+              <div class="row">
+                <div>
+                  <label for="name">Имя</label>
+                  <input id="name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required />
+                </div>
+                <div>
+                  <label for="phone">Телефон / мессенджер</label>
+                  <input id="phone" name="phone" type="text" placeholder="+7…" autocomplete="tel" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="topic">Категория</label>
+                <input id="topic" name="topic" type="text" placeholder="ДТП / раздел имущества / дети / земля / жильё" required />
+              </div>
+
+              <div>
+                <label for="msg">Коротко по сути</label>
+                <textarea id="msg" name="msg" placeholder="Что произошло? Какие документы есть? Сроки/даты?" required></textarea>
+              </div>
+
+              <div class="consent">
+                <input id="consent" type="checkbox" required />
+                <div>
+                  Я согласен(на) на обработку персональных данных и ознакомлен(а) с
+                  <a href="#privacy" id="privacyLink" style="color:#CFE3F7; text-decoration:underline;">политикой конфиденциальности</a>.
+                  <div style="margin-top:6px;">
+                    <span style="display:inline-block; padding:4px 8px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.03);">
+                      ⚠️ Не пишите в форме данные банковских карт.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn" type="submit">Сформировать заявку</button>
+
+              <div class="note">Сайт не является публичной офертой. Материалы носят информационный характер.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <div class="panel">
+          <h3>Политика конфиденциальности (шаблон)</h3>
+          <p class="muted">
+            Базовый шаблон. Для публикации лучше адаптировать под ваш способ сбора данных (форма/мессенджеры/CRM/аналитика).
+          </p>
+          <ul class="muted" style="line-height:1.7; margin:10px 0 0; padding-left:18px;">
+            <li>Собираются данные, указанные пользователем добровольно (имя, контакт, описание ситуации).</li>
+            <li>Цель: связь с пользователем, оказание юридической услуги, подготовка документов.</li>
+            <li>Данные не передаются третьим лицам, кроме случаев, предусмотренных законом, либо по договору оказания услуг.</li>
+            <li>Пользователь может запросить удаление/уточнение данных через контактные каналы.</li>
+            <li>Срок хранения: минимально необходимый для целей обработки или требований закона.</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="btn secondary" href="#contact">Вернуться к контактам</a>
+            <a class="btn ghost" href="#top">Наверх</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>
+          <div style="font-weight:900; color:var(--text);">Юрист • Кемерово</div>
+          <div style="margin-top:6px;">© <span id="year"></span>. Все права защищены.</div>
+          <div style="margin-top:6px;">Материалы на сайте не являются юридической консультацией. Для оценки перспектив нужны документы.</div>
+        </div>
+        <div>
+          <a href="#privacy" style="text-decoration:underline;">Политика конфиденциальности</a>
+          <div style="margin-top:10px;">
+            <a href="tel:+79235013563" style="text-decoration:underline;">8 923 501-35-63</a>
+            ·
+            <a href="https://t.me/territoryazakona_annakovtun" target="_blank" rel="noopener" style="text-decoration:underline;">Telegram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <strong id="toastTitle">Готово</strong>
+    <p id="toastText">Сообщение сформировано.</p>
+    <div class="actions">
+      <button class="btn secondary" id="toastClose" type="button">Закрыть</button>
+      <a class="btn ghost" id="toastCopy" href="#" role="button">Скопировать текст</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const burger = document.getElementById("burger");
+    const mobile = document.getElementById("mobile");
+    burger?.addEventListener("click", () => {
+      const expanded = burger.getAttribute("aria-expanded") === "true";
+      burger.setAttribute("aria-expanded", String(!expanded));
+      mobile.style.display = expanded ? "none" : "block";
+    });
+    mobile?.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        mobile.style.display = "none";
+        burger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.querySelectorAll(".q").forEach(q => {
+      const toggle = () => {
+        const isOpen = q.getAttribute("aria-expanded") === "true";
+        document.querySelectorAll(".q").forEach(x => x.setAttribute("aria-expanded", "false"));
+        q.setAttribute("aria-expanded", String(!isOpen));
+      };
+      q.addEventListener("click", toggle);
+      q.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+      });
+    });
+
+    const toast = document.getElementById("toast");
+    const toastTitle = document.getElementById("toastTitle");
+    const toastText = document.getElementById("toastText");
+    const toastClose = document.getElementById("toastClose");
+    const toastCopy = document.getElementById("toastCopy");
+
+    let lastPayload = "";
+    function showToast(title, text, payload=""){
+      toastTitle.textContent = title;
+      toastText.textContent = text;
+      lastPayload = payload;
+      toast.style.display = "block";
+    }
+    function hideToast(){ toast.style.display = "none"; }
+    toastClose.addEventListener("click", hideToast);
+
+    toastCopy.addEventListener("click", async (e) => {
+      e.preventDefault();
+      if (!lastPayload) return;
+      try{
+        await navigator.clipboard.writeText(lastPayload);
+        showToast("Скопировано", "Текст заявки скопирован в буфер обмена.", lastPayload);
+      }catch(err){
+        showToast("Не получилось", "Браузер не дал доступ к буферу обмена. Скопируйте вручную.", lastPayload);
+      }
+    });
+
+    const form = document.getElementById("leadForm");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const topic = document.getElementById("topic").value.trim();
+      const msg = document.getElementById("msg").value.trim();
+      const consent = document.getElementById("consent").checked;
+
+      const errors = [];
+      if (name.length < 2) errors.push("Имя");
+      if (phone.length < 5) errors.push("Контакт");
+      if (topic.length < 3) errors.push("Категория");
+      if (msg.length < 10) errors.push("Описание");
+      if (!consent) errors.push("Согласие");
+
+      if (errors.length) {
+        showToast("Проверьте форму", "Заполните: " + errors.join(", ") + ".", "");
+        return;
+      }
+
+      const payload =
+`ЗАЯВКА (Кемерово)
+Имя: ${name}
+Контакт: ${phone}
+Категория: ${topic}
+
+Суть:
+${msg}
+
+Юрист: 8 923 501-35-63
+Telegram: @territoryazakona_annakovtun`;
+
+      showToast("Заявка сформирована", "Скопируйте текст и отправьте в Telegram: @territoryazakona_annakovtun", payload);
+      form.reset();
+    });
+  </script>
+</body>
+</html>
